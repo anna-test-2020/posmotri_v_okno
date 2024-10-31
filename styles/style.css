@@ -16,6 +16,7 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  max-width: 1140px;
 }
 
 h1,
@@ -35,4 +36,40 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+
+
+
+.content {
+  display: grid;
+  grid-template-columns: 711px 400px;
+  margin-top: 70px;
+}
+
+.result {
+  width: 711px;
+  height: 456px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.result__video {
+  width: 711px;
+  height: 386px;
+}
+
+.search-form {
+  height: 54px;
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.search-form__item {
+
+}
+
+.content__details {
+  width: 400px;
 }
