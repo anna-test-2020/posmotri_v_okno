@@ -81,10 +81,13 @@ ol {
   object-fit: cover;
 }
 
+/* Форма выбора города */
+
 .search-form {
   height: 54px;
   display: grid;
-  grid-template-columns: 225px 212px 194px;
+  /* grid-template-columns: 225px 212px 194px; */
+  grid-template-columns: 245px 212px 194px;
   justify-content: space-between;
   align-items: end;
 }
@@ -93,7 +96,7 @@ ol {
   border: 0;
 }
 
-h2.search-form__fieldset-title {
+.search-form__fieldset-title {
   font-size: 18px;
   font-weight: 400;
   color: #fff;
@@ -107,15 +110,43 @@ h2.search-form__fieldset-title {
   font-size: 18px;
   font-weight: 400;
   color: #fff;
+  /* width: fit-content; */
+  width: 100%;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  padding: 1px;
 }
+
+.search-form__textfield:focus {
+  border: 0;
+  outline: 0;
+}
+
+/* .search-form__textfield:active {
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+} */
+
+.search-form__label:has(.search-form__textfield:active)   {
+  outline: 1px solid #fff;
+}
+
+
 
 .search-form__label {
   display: flex;
-  width: fit-content;
   padding: 1px;
   align-items: center;
   cursor: pointer;
 }
+
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #fff;
+}
+
+/* Форма выбора суток */
 
 .search-form__label-text {
   font-family: "Fira Sans Condensed", sans-serif;
@@ -135,7 +166,7 @@ h2.search-form__fieldset-title {
 }
 
 
-input[type='checkbox'] + .search-form__pseudo-checkbox {
+input[type="checkbox"] + .search-form__pseudo-checkbox {
   background-color: transparent;
   border: 1px solid #fff;
   width: 19px;
@@ -143,8 +174,8 @@ input[type='checkbox'] + .search-form__pseudo-checkbox {
   margin-right: 5px;
 }
 
-input[type='checkbox']:checked + .search-form__pseudo-checkbox,
-input[type='checkbox']:active + .search-form__pseudo-checkbox  {
+input[type="checkbox"]:checked + .search-form__pseudo-checkbox,
+input[type="checkbox"]:active + .search-form__pseudo-checkbox  {
   background-color: #fff;
   box-shadow: inset #000 0 0 0 1px;
 } 
@@ -159,6 +190,7 @@ input[type="checkbox"]:focus-visible  + .search-form__pseudo-checkbox {
   outline: 1px solid #fff;
 }
 
+/* Кнопка Найти */
 
 .search-form__submit-button {
   width: 194px;
