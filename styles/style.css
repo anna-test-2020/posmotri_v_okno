@@ -77,13 +77,10 @@ ol {
   object-fit: cover;
 }
 
-/* Форма выбора города */
-
 .search-form {
   height: 54px;
   display: grid;
-  /* grid-template-columns: 225px 212px 194px; */
-  grid-template-columns: 245px 212px 194px;
+  grid-template-columns: fit-content(225px) 212px 194px;
   justify-content: space-between;
 }
 
@@ -107,12 +104,11 @@ ol {
 .search-form__textfield {
   appearance: none;
   background-color: transparent;
-  border: 0;
   font-size: 18px;
   font-weight: 400;
   color: #fff;
-  /* width: fit-content; */
-  width: 100%;
+  border-left: 0;
+  border-right: 0;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
 }
@@ -178,8 +174,6 @@ input[type="checkbox"]:focus-visible  + .search-form__pseudo-checkbox {
   outline: none;
 }
 
-/* Кнопка*/
-
 .button {
   height: 34px;
   margin: 2px;
@@ -225,7 +219,7 @@ input[type="checkbox"]:focus-visible  + .search-form__pseudo-checkbox {
   font-style: normal;
   font-weight: 700;
   font-size: 75px;
-  line-height: 94%;
+  line-height: 0.94;
   text-transform: uppercase;
   color: #fff;
 }
@@ -288,7 +282,7 @@ h2.content__video-card-title {
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
-  line-height: 100%;
+  line-height: 1;
   text-transform: uppercase;
   color: #fff;
   max-width: 188px;
@@ -297,11 +291,11 @@ h2.content__video-card-title {
 }
 
 .content__video-card-description {
-  font-family: "Fira Sans Condensed", Arial, sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 16px;
+  line-height: 0.89;
   color: #fff;
 }
 
