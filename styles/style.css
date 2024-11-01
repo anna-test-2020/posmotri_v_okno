@@ -114,13 +114,12 @@ ol {
   width: 100%;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
-  border-left: 1px solid transparent;
+   /* border-left: 1px solid transparent;
   border-right: 1px solid transparent;
-  padding: 1px;
+  padding: 1px; */
 }
 
 .search-form__textfield:focus {
-  border: 0;
   outline: 0;
 }
 
@@ -129,9 +128,9 @@ ol {
   border-right: 1px solid #fff;
 } */
 
-.search-form__label:has(.search-form__textfield:active)   {
+/* .search-form__label:has(.search-form__textfield:active)   {
   outline: 1px solid #fff;
-}
+} */
 
 
 
@@ -139,6 +138,9 @@ ol {
   display: flex;
   padding: 1px;
   align-items: center;
+}
+
+.search-form__label:has(.search-form__checkbox) {
   cursor: pointer;
 }
 
@@ -165,7 +167,6 @@ ol {
   gap: 15px;
 }
 
-
 input[type="checkbox"] + .search-form__pseudo-checkbox {
   background-color: transparent;
   border: 1px solid #fff;
@@ -183,12 +184,13 @@ input[type="checkbox"]:active + .search-form__pseudo-checkbox  {
 input[type="checkbox"]:focus  + .search-form__pseudo-checkbox,
 input[type="checkbox"]:focus-visible  + .search-form__pseudo-checkbox {
   outline: none;
-  /* border: 0; */
 }
 
-.search-form__label:has(input[type="checkbox"]:focus-visible)   {
+/* .search-form__label:has(input[type="checkbox"]:focus-visible)   {
   outline: 1px solid #fff;
-}
+} */
+
+
 
 /* Кнопка Найти */
 
