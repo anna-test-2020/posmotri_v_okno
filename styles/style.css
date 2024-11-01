@@ -16,7 +16,9 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
-  max-width: 1140px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
 }
 
 h1,
@@ -55,8 +57,9 @@ ol {
 .content {
   display: grid;
   grid-template-columns: 710px 400px;
+  max-width: 1140px;
   gap: 30px;
-  height: 534px;
+  /* height: 534px; */
 }
 
 .result {
