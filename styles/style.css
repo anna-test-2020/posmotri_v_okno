@@ -100,6 +100,7 @@ h2.search-form__fieldset-title {
 }
 
 .search-form__textfield {
+  appearance: none;
   background-color: transparent;
   border: 0;
   font-size: 18px;
@@ -108,7 +109,7 @@ h2.search-form__fieldset-title {
 }
 
 .search-form__label {
-  display: inline-flex;
+  display: flex;
   width: fit-content;
 }
 
@@ -117,6 +118,33 @@ h2.search-form__fieldset-title {
   font-weight: 400;
   color: #fff;
 }
+
+.search-form__checkbox-list {
+  display: flex;
+  gap: 15px;
+}
+
+
+
+input[type='checkbox'] + span {
+  background-color: transparent;
+  border: 1px solid #fff;
+  width: 19px;
+  height: 19px;
+  margin-right: 5px;
+  box-shadow: inset #000 0 0 0 1px;
+}
+
+input[type='checkbox']:checked + span {
+  background-color: #fff;
+} 
+
+/* input[type='checkbox']:checked + span {
+  background-image: url(./images/check.svg);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: contain;
+} */
 
 .search-form__submit-button {
   width: 194px;
