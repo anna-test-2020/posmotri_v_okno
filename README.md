@@ -1,1 +1,1 @@
-[Ссылка на репозиторий](https://github.com/anna-test-2020/posmotri_v_okno)
+[Ссылка на репозиторий](https://github.com/anna-test-2020/posmotri_v_okno/)
