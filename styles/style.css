@@ -55,7 +55,6 @@ ol {
   grid-template-columns: 710px 400px;
   max-width: 1140px;
   gap: 30px;
-  /* height: 534px; */
 }
 
 .result {
@@ -78,7 +77,6 @@ ol {
 }
 
 .search-form {
-  /* height: 54px; */
   display: grid;
   grid-template-columns: fit-content(225px) 212px 194px;
   justify-content: space-between;
