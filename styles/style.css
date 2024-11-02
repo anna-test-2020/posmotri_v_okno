@@ -79,6 +79,7 @@ ol {
 .search-form {
   display: grid;
   grid-template-columns: fit-content(225px) 212px 194px;
+  gap: 40px;
   justify-content: space-between;
 }
 
