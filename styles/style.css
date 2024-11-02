@@ -113,6 +113,14 @@ ol {
   border-bottom: 1px solid currentColor;
 }
 
+.search-form__textfield::placeholder {
+  font-family: "Fira Sans Condensed", sans-serif;
+  color: #fff;
+  opacity: 0.7;
+  font-size: 18px;
+  font-weight: 400;
+}
+
 .search-form__textfield:focus {
   outline: 0;
 }
