@@ -234,7 +234,7 @@ input[type="checkbox"]:focus-visible + .search-form__pseudo-checkbox {
 
 .content__video-card {
   display: grid;
-  grid-template-columns: 200px 194px;
+  grid-template-columns: 183px 194px;
   gap: 2px;
 }
 
