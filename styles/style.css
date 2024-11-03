@@ -101,6 +101,7 @@ ol {
 }
 
 .search-form__textfield {
+  width: 225px;
   appearance: none;
   background-color: transparent;
   font-size: 18px;
