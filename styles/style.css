@@ -102,6 +102,7 @@ ol {
 
 .search-form__textfield {
   width: 225px;
+  font-family: 'Fira Sans Condensed', sans-serif;
   appearance: none;
   background-color: transparent;
   font-size: 18px;
