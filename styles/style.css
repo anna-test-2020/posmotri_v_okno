@@ -79,7 +79,7 @@ ol {
 .search-form {
   display: grid;
   grid-template-columns: fit-content(225px) 212px 194px;
-  gap: 40px;
+  gap: 39px;
   justify-content: space-between;
 }
 
@@ -159,7 +159,7 @@ ol {
 
 .search-form__checkbox-list {
   display: flex;
-  gap: 15px;
+  gap: 13px;
 }
 
 input[type="checkbox"] + .search-form__pseudo-checkbox {
@@ -199,7 +199,7 @@ input[type="checkbox"]:focus-visible + .search-form__pseudo-checkbox {
 }
 
 .search-form__submit-button {
-  width: 194px;
+  width: 193px;
 }
 
 .more-button {
